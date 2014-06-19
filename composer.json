@@ -1,0 +1,7 @@
+{
+    "name": "clearphp/framework",
+    "description": "The clear framework.",
+    "require": {
+        "php": ">=5.3.0",
+    }
+}

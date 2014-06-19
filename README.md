@@ -1,4 +1,10 @@
 framework
 =========
 
-clear framework
+The clear framework
+
+
+
+# License
+
+MIT
