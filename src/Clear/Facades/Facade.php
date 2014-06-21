@@ -29,14 +29,14 @@ abstract class Facade {
     protected static $methodAlias = [];
 
     /**
-     * The resolved object instances.
+     * 已经实例化的服务
      *
      * @var array
      */
     protected static $resolvedInstance;
 
     /**
-     * Get the root object behind the facade.
+     * 获取服务实例
      *
      * @return mixed
      */
@@ -46,7 +46,7 @@ abstract class Facade {
     }
 
     /**
-     * Get the registered name of the component.
+     * 获取在container中注入的服务名称
      *
      * @return string
      *
@@ -58,9 +58,10 @@ abstract class Facade {
     }
 
     /**
-     * Resolve the facade root instance from the container.
+     * 生成服务实例
      *
      * @param  string  $name
+     * 
      * @return mixed
      */
     protected static function resolveFacadeInstance($name)
@@ -75,7 +76,7 @@ abstract class Facade {
     }
 
     /**
-     * Clear a resolved facade instance.
+     * 删除指定实例
      *
      * @param string $name
      * 
@@ -87,7 +88,7 @@ abstract class Facade {
     }
 
     /**
-     * Clear all of the resolved instances.
+     * 删除所有实例
      *
      * @return void
      */
@@ -97,7 +98,7 @@ abstract class Facade {
     }
 
     /**
-     * Get the application instance behind the facade.
+     * 获取DI容器
      *
      * @return \Clear\Support\Container
      */
@@ -107,9 +108,9 @@ abstract class Facade {
     }
 
     /**
-     * Set the application instance.
+     * 设置DI容器
      *
-     * @param  \Clear\Support\Container  $container
+     * @param \Clear\Support\Container $container
      * 
      * @return void
      */
@@ -119,10 +120,10 @@ abstract class Facade {
     }
 
     /**
-     * Handle dynamic, static calls to the object.
+     * 静态代理
      *
-     * @param  string  $method
-     * @param  array   $args
+     * @param string $method
+     * @param array  $args
      * 
      * @return mixed
      */

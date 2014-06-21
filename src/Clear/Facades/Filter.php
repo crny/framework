@@ -9,7 +9,7 @@ class Filter extends Facade {
     ];
 
     /**
-     * Get the registered name of the component.
+     * 获取在container中注入的服务名称
      *
      * @return string
      */

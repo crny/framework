@@ -8,14 +8,14 @@ use Clear\Support\Container;
 abstract class ServiceProvider {
 
     /**
-     * The application instance.
+     * DI容器
      *
      * @var \Clear\Support\Container
      */
     protected $container;
 
     /**
-     * Create a new service provider instance.
+     * 实例化容器
      *
      * @param  \Clear\Support\Container $container
      * 
@@ -27,7 +27,7 @@ abstract class ServiceProvider {
     }
     
     /**
-     * Register the service provider.
+     * 注册服务
      *
      * @return void
      */
